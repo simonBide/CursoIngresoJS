@@ -11,10 +11,13 @@ if(edad >= 18)
 	{
 		alert ("Usted es mayor de edad");
 	}
-if(edad <=17 && edad >=13) 
+    else if(edad <=12) 
+	{
+		alert ("Usted es niño");
+	}
+  
+    else
 	{
 		alert ("Usted es adolescente");
 	}
-	
-
 }//FIN DE LA FUNCIÓN
