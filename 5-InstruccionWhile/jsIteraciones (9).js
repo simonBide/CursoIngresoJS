@@ -3,17 +3,15 @@ function Mostrar()
 
 	var contador=0;
 	var numero;
-	var numeroMax;
-	var numeroMin	
-	var respuesta='si';
-
- 		numero = prompt("Ingrese un numero"));
+	var numeroMax=numero;
+	var numeroMin=numero;	
+	var respuesta;
 
 
 	while(respuesta!='no')
 	{
 		numero = parseInt(prompt("Ingrese un numero"));
-		respuesta = prompt("Quiere seguir ingresando numeros?"));
+		respuesta = prompt("Quiere seguir ingresando numeros?");
 
 		if( numeroMax < numero )
 		{
