@@ -1,16 +1,15 @@
 function Mostrar()
-{
-	var contador = 1;
+{	
+	var i = 1;
 
-	while (contador <= 10);{
+	while ( i < 11 )
+	{
+		//alert(i);
+		console.log(i);
+		//document.write(i);
 
-	console.log (contador);
-
-		contador =+ 1;
+		i++;
 	}
 
-
-
-
-
-}//FIN DE LA FUNCIÓN
+}
+//FIN DE LA FUNCIÓN

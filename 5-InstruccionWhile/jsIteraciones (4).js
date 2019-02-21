@@ -1,14 +1,12 @@
 function Mostrar()
 {
 
-	var numero = prompt("ingrese un numero entre 0 y 10");
-	numero = parseInt(numero);
+	var numero = prompt("ingrese un número entre 0 y 9.");
+		
+		while ( numero < 0 || numero > 9 || isNaN(numero) )
+			{
+				numero = parseInt(prompt("Ingrese un numero entre 0 y 9."));
+			}
 
-
- while (numero <=0 || numero >10 || isNaN(numero)){
- 	numero = prompt("ingrese un número entre 0 y 10.");
- 	numero = parseInt(numero);
-
-}
-document.getElementById('Numero').value=numero;
+			document.getElementById("Numero").value = numero;
 }//FIN DE LA FUNCIÓN
