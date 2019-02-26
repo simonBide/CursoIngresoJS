@@ -5,7 +5,7 @@ function Mostrar()
 		
 		while ( numero < 0 || numero > 9 || isNaN(numero) )
 			{
-				numero = parseInt(prompt("Ingrese un numero entre 0 y 9."));
+				numero = parseInt(prompt("Error.Ingrese un numero entre 0 y 9."));
 			}
 
 			document.getElementById("Numero").value = numero;

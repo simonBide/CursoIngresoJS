@@ -4,10 +4,10 @@ function Mostrar()
 	var contador=0;
 	var positivo=0;
 	var negativo=1;
-	var respuesta='si';
+	var respuesta;
 	var numero;
 
-	while(respuesta == "si")
+	do
 	{
 		numero=parseInt(prompt("Ingrese un numero"));
 	
@@ -18,13 +18,12 @@ function Mostrar()
 		else
 			 {
 			 negativo=negativo*numero;
-			 
-			 
+			 	 
 			}
 
 			respuesta=prompt("Quiere seguir ingresando numeros?").toLowerCase();
 			contador++;
-	}
+	}while(respuesta == "si")
 
 document.getElementById('suma').value=positivo;
 document.getElementById('producto').value=negativo;

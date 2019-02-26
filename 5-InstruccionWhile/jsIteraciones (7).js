@@ -3,17 +3,23 @@ function Mostrar()
 
 	var contador=0;
 	var acumulador=0;
-	var respuesta='si';
+	var respuesta;
 	var numero;
 
-	while(respuesta == "si")
+	do
 	{
 		numero=parseInt(prompt("Ingrese un numero"));
-		acumulador=acumulador+numero
-		respuesta=prompt("Quiere seguir ingresando numeros?").toLowerCase();
+		while (isNaN(numero) == true)
+		{
+			numero=parseInt(prompt("Eso no es un numero.Ingrese un numero"));
+		}
+		acumulador=acumulador+numero;
+		respuesta=prompt("Quiere seguir ingresando numeros? SI/NO").toLowerCase();
 		contador++;
 
-	}
+	}while(respuesta == "si");
+
+
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/contador;
 
