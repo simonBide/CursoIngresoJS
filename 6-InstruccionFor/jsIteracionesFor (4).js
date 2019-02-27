@@ -1,8 +1,13 @@
 function Mostrar()
 {
-    for( i = 0 ; i < 10 ; i++ );
+    for( var i = 0 ; i < 1000 ; i++ );
     {
-        
+        alert("Hola " + i);
+
+        if( i == 35 )
+        {
+      break ;
+        }
     }
 
 
