@@ -2,31 +2,35 @@ function Mostrar()
 {
 
 	var contador=0;
-	var numero;
-	var numeroMax=numero;
-	var numeroMin=numero;	
+	var numero=parseInt(prompt("Ingrese un numero"));
+	var numeroMax;
+	var numeroMin;	
 	var respuesta;
 
 
-	while(respuesta!='no')
+	do
 	{
 		numero = parseInt(prompt("Ingrese un numero"));
-		respuesta = prompt("Quiere seguir ingresando numeros?");
-
+		while(isNaN(numero))
+		{
+			numero = parseInt(prompt("Error. Ingrese un numero"))
+		}
+		
 		if( numeroMax < numero )
 		{
 			numeroMax = numero;
 		}
 
-		else if ( numeroMin > numero) 
+		if ( numeroMin > numero) 
 		{
 			numeroMin = numero;
-
 		}
+		respuesta = prompt("Quiere seguir ingresando numeros?");
+	}while(respuesta != "no");
 	
 	document.getElementById("maximo").value=numeroMax
 	document.getElementById("minimo").value=numeroMin
-	}
+	
 
 
 
