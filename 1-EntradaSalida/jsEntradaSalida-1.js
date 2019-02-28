@@ -8,6 +8,7 @@ a) el promedio de las notas totales.
 b) la nota más baja.
 c) la cantidad de varones que su nota haya sido mayor o igual a 6.*/
 
+/*
 var notas;
 var sexo;
 var promNotas;
@@ -51,6 +52,24 @@ promedio = acumuladorNotas / cantidad;
 
 alert("Promedio de las notas: " + promedio + "\nVarones con notas mayor a 5: " + contadorVaronesMas5 + "\nNota mas baja: " + notaMin + "\nEl sexo de la nota mas baja es: " + sexoNotaBaja);
 
+*/
 
+
+
+
+var num;
+var numPar;
+var promedio;
+
+
+do 
+{
+    num=parseInt(prompt("Ingrese un numero."));
+
+    while( num < 0 || isNaN(num) )
+    {
+        num=parseInt(prompt("Ingrese un numero"));
+    }
 }
+
 
